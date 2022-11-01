@@ -70,10 +70,12 @@ nav a:hover {
     margin-left: 55px;
 }
 
-.filtre_activites.titre_filtre h2 {
+.titre_filtre  p {
 
     font-size: 16px;
     font-weight: 400;
+    margin-top: 8px;
+ 
 }
 
 .location_filtre {
@@ -197,7 +199,7 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-.filtres_recherche a:hover {
+.filtres_recherche form:hover {
     background-color: #DEEBFF;
 }
 
@@ -240,7 +242,7 @@ nav a:hover {
     flex-direction: row;
     max-width: 100%;
     column-gap: 33px;
-    flex-wrap: wrap;
+margin-right: 50px;
     margin-left: 50px;
 }
 
@@ -289,13 +291,23 @@ nav a:hover {
     object-fit: cover;
 }
 
-h1,
-h4,
-h7 {
+h2,
+h4
+ {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     color: black;
+}
+#activites_a_marseille h6
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+    padding-left: 50px;
+    margin-top: 60px;
+
 }
 
 .hebergement_marseille h5 {
@@ -303,7 +315,7 @@ h7 {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-
+   
 }
 
 .hebergement_marseille h6 {
@@ -590,6 +602,12 @@ footer a {
         font-size: 13px;
     }
 
+    #section_hebergement {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+     
+    }
     .hebergement_marseille {
 
         width: 100%;

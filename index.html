@@ -9,17 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
-
-
-
     <title>booki</title>
-
 
 </head>
 
@@ -27,7 +22,7 @@
     <div id="bloc_page">
         <header>
             <figure>
-                <img class="logo" src="image/Images Booki/logo/Booki.png" alt="logo">
+                <img class="logo" src="image/imagesbooki/logo/Booki.png" alt="logo">
             </figure>
             <nav>
                 <ul>
@@ -38,21 +33,20 @@
         </header>
         <section id="filtre_activites">
             <div class="titre_filtre">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2>En plein centre-ville ou en pleine nature</h2>
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
             </div>
             <div class="location_filtre">
                 <div class="location_box1">
                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                 </div>
                 <div class="location_box2">
-                    <label for="texte"></label>
+                    <label for="zone_de_recherche"></label>
                     <input class="barre_recherche" type="search" name="zone_de_recherche" id="zone_de_recherche"
                         placeholder="Marseille,france">
                 </div>
                 <div class="location_box3">
-                    <label for="recherche"></label>
-                    <input class="bouton_recherche" type="submit" value="Recherche">
+                    <input class="bouton_recherche" type="submit" value="Recherche" >
                     <button type="submit" class="loupe_recherche_mobile"> <i class="fas fa-search"></i></button>
                 </div>
             </div>
@@ -61,22 +55,24 @@
                 <h3> Filtres</h3>
                 <ul>
                     <li>
-                        <a class="filtre" href="#">
+                        <form  class="filtre" action="#">
+                        
                             <i class="fa-solid fa-money-bill-wave"></i>
                             <button class="bouton_filtres">Économique</button>
-                        </a>
-                        <a class="filtre" href="#">
+                         </form>
+                         <form class="filtre" action="#">
                             <i class="fa-solid fa-person"></i>
                             <button class="bouton_filtres">Familial</button>
-                        </a>
-                        <a class="filtre" href="#">
+                        </form>
+                        <form class="filtre" action="#">
+                       
                             <i class="fa-solid fa-heart"></i>
                             <button class="bouton_filtres">Romantique</button>
-                        </a>
-                        <a class="filtre" href="#">
+                        </form>
+                        <form class="filtre" action="#" method="get">
                             <i class="fa-solid fa-dog"></i>
                             <button class="bouton_filtres">Animaux autorisés</button>
-                        </a>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -95,7 +91,7 @@
                 <h4>Hébergements à Marseille</h4>
                 <div class="carte_hebergement_marseille">
                     <a class="carte_hebergement" href="#">
-                        <img class="image_hebergement" src="image/Images Booki/hebergements/4_small/canabiere.jpg"
+                        <img class="image_hebergement" src="image/imagesbooki/hebergements/4_small/canabiere.jpg"
                             alt="Auberge la Canabière">
                         <h5> Auberge la Canabière</h5>
                         <h6> Nuit à partir de 25€</h6>
@@ -113,7 +109,7 @@
                     </a>
 
                     <a class="carte_hebergement" href="#">
-                        <img class="image_hebergement" src="image/Images Booki/hebergements/4_small/hotel_du_port.jpg"
+                        <img class="image_hebergement" src="image/imagesbooki/hebergements/4_small/hotel_du_port.jpg"
                             alt="Hôtel du port">
                         <h5> Hôtel du port</h5>
                         <h6> Nuit à partir de 52€</h6>
@@ -130,7 +126,7 @@
                         </div>
                     </a>
                     <a class="carte_hebergement" href="#">
-                        <img class="image_hebergement" src="image/Images Booki/hebergements/4_small/les_mouettes.jpg"
+                        <img class="image_hebergement" src="image/imagesbooki/hebergements/4_small/les_mouettes.jpg"
                             alt="Hôtel les mouette">
                         <h5> Hôtel les mouettes</h5>
                         <h6> Nuit à partir de 76€</h6>
@@ -147,7 +143,7 @@
                         </div>
                     </a>
                     <a class="carte_hebergement" href="#">
-                        <img class="image_hebergement" src="image/Images Booki/hebergements/4_small/hotel_la_mer.jpg"
+                        <img class="image_hebergement" src="image/imagesbooki/hebergements/4_small/hotel_la_mer.jpg"
                             alt="hotel_de_mer">
                         <h5>Hôtel de la mer</h5>
                         <h6>Nuit à partir de 46€</h6>
@@ -164,7 +160,7 @@
                         </div>
                     </a>
                     <a class="carte_hebergement" href="#">
-                        <img class="image_hebergement" src="image/Images Booki/hebergements/4_small/le_panier.jpg"
+                        <img class="image_hebergement" src="image/imagesbooki/hebergements/4_small/le_panier.jpg"
                             alt="Auberge Le Panier">
                         <h5>Auberge Le Panier</h5>
                         <h6>Nuit à partir de 23€</h6>
@@ -181,7 +177,7 @@
                         </div>
                     </a>
                     <a class="carte_hebergement" href="#">
-                        <img class="image_hebergement" src="image/Images Booki/hebergements/4_small/chez_amina.jpg"
+                        <img class="image_hebergement" src="image/imagesbooki/hebergements/4_small/chez_amina.jpg"
                             alt="hotel_de_mer">
                         <h5>Hôtel Chez Amina</h5>
                         <h6>Nuit à partir de 96€</h6>
@@ -211,7 +207,7 @@
                 <div class="carte_plus_populaire">
                     <a class="carte_populaire" href="#">
                         <figure class="img_cards1">
-                            <img class="image_carte_populaire" src="image/Images Booki/hebergements/4_small/soleil.jpg"
+                            <img class="image_carte_populaire" src="image/imagesbooki/hebergements/4_small/soleil.jpg"
                                 alt="Hôtel Le soleil du matin">
                         </figure>
                         <div class="texte_carte_populaire">
@@ -236,7 +232,7 @@
                     <a class="carte_populaire" href="#">
                         <figure class="img_cards2">
                             <img class="image_carte_populaire"
-                                src="image/Images Booki/hebergements/4_small/coeur_eau.jpg"
+                                src="image/imagesbooki/hebergements/4_small/coeur_eau.jpg"
                                 alt="Chambres d’hôtes Au cœur de l’eau">
                         </figure>
                         <div class="texte_carte_populaire">
@@ -261,7 +257,7 @@
                     <a class="carte_populaire" href="#">
                         <figure class="img_cards3">
                             <img class="image_carte_populaire"
-                                src="image/Images Booki/hebergements/4_small/bleu_blanc.jpg" alt="Hôtel Bleu">
+                                src="image/imagesbooki/hebergements/4_small/bleu_blanc.jpg" alt="Hôtel Bleu">
                         </figure>
                         <div class="texte_carte_populaire">
                             <div class="text">
@@ -282,15 +278,14 @@
                         </div>
                     </a>
                 </div>
+            </div>
         </section>
         <section id="activites_a_marseille">
-            <div>
-                <h7>Activités à Marseille</h7>
-            </div>
+                <h6>Activités à Marseille</h6>
             <div class="carte_activites_a_marseille">
                 <a class="carte_activites" href="#">
                     <figure class="img_activites1">
-                        <img class="image_carte_activites" src="image/Images Booki/activites/3_medium/port.jpg"
+                        <img class="image_carte_activites" src="image/imagesbooki/activites/3_medium/port.jpg"
                             alt="vieux_port">
                     </figure>
                     <div>
@@ -299,14 +294,14 @@
                 </a>
                 <a class="carte_activites" href="#">
                     <figure class="img_activites2">
-                        <img class="image_carte_activites" src="image/Images Booki/activites/3_medium/pormegue.jpg"
+                        <img class="image_carte_activites" src="image/imagesbooki/activites/3_medium/pormegue.jpg"
                             alt="Fort de Pomègues">
                     </figure>
                     <p>Fort de Pomègues</p>
                 </a>
                 <a class="carte_activites" href="#">
                     <figure class="img_activites3">
-                        <img class="image_carte_activites" src="image/Images Booki/activites/3_medium/calanque.jpg"
+                        <img class="image_carte_activites" src="image/imagesbooki/activites/3_medium/calanque.jpg"
                             alt="calanque">
                     </figure>
                     <p>Parc national des Calanques</p>
@@ -314,7 +309,7 @@
                 <a class="carte_activites" href="#">
                     <figure class="img_activites4">
                         <img class="image_carte_activites"
-                            src="image/Images Booki/activites/3_medium/notre_dame_garde.jpg"
+                            src="image/imagesbooki/activites/3_medium/notre_dame_garde.jpg"
                             alt="Notre-Dame-de-la-Garde">
                     </figure>
                     <p>Notre-Dame-de-la-Garde</p>
