@@ -35,12 +35,11 @@ header {
 
 /* navigation hébergement/Activités  */
 
+
 nav ul {
     display: flex;
     column-gap: 68px;
     margin-right: 77px;
-
-
 }
 
 nav li {
@@ -56,7 +55,7 @@ nav a {
     font-size: 16px;
 }
 
-nav a:hover {
+nav a:hover  {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 46px;
@@ -145,10 +144,10 @@ nav a:hover {
 
 .filtres_recherche {
 
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 68%;
+   column-gap: 10px;
+    
 }
 
 .filtres_recherche li {
@@ -156,7 +155,7 @@ nav a:hover {
     list-style-type: none;
     display: flex;
     column-gap: 30px;
-    flex-wrap: wrap;
+  
 
 }
 
@@ -168,7 +167,7 @@ nav a:hover {
 }
 
 .filtre {
-    display: flex;
+    display: inline-flex;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -184,7 +183,6 @@ nav a:hover {
     font-size: 22px;
     color: #0065FC;
     padding-right: 10px;
-    display: inline-block;
 }
 
 .bouton_filtres {
@@ -193,10 +191,9 @@ nav a:hover {
     font-style: normal;
     font-weight: 700;
     color: black;
-    display: inline-block;
     text-decoration: none;
     background: none;
-    flex-wrap: wrap;
+ 
 }
 
 .filtres_recherche form:hover {
@@ -241,9 +238,9 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    column-gap: 33px;
-margin-right: 50px;
+    column-gap: 25px;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .hebergement_marseille {
@@ -263,7 +260,7 @@ margin-right: 50px;
 .carte_hebergement_marseille {
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
+    column-gap: 20px;
     row-gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -275,7 +272,7 @@ margin-right: 50px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    box-sizing: border-box;
+    width: 30%;
     background-color: white;
     text-decoration: none;
     color: black;
@@ -285,7 +282,7 @@ margin-right: 50px;
 .image_hebergement {
     border-radius: 20px 20px 0px 0px;
     box-sizing: border-box;
-    width: 246px;
+    width: 100%;
     height: 124px;
     border: 5px solid white;
     object-fit: cover;
@@ -352,12 +349,13 @@ h4
 }
 
 .plus_populaire {
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background: #F2F2F2;
     border-radius: 20px;
-    width: 420px;
+  
 
 }
 
@@ -397,12 +395,10 @@ h4
     flex-direction: row;
     text-decoration: none;
     box-sizing: border-box;
-    width: 78%;
-    height: 28.5%;
+    width: 90%;
+    height: 28.2%;
     border-radius: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-
-
 }
 
 .texte_carte_populaire {
@@ -411,6 +407,8 @@ h4
     justify-content: space-between;
     background-color: white;
     border-radius: 0px 20px 20px 0px;
+    width: 100%;
+   
 }
 
 .texte_carte_populaire h5 {
@@ -434,10 +432,11 @@ h4
 
 .image_carte_populaire {
     width: 137px;
-    height: 144px;
+    height: 93.2%;
     object-fit: cover;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
+  
 
 
 }
@@ -450,7 +449,8 @@ h4
     display: flex;
     flex-direction: column;
     row-gap: 18.5px;
-
+    max-width: 100%;
+    margin-right: 50px;
 
 }
 
@@ -469,12 +469,12 @@ h4
     text-decoration: none;
     border-radius: 20px;
     flex-wrap: wrap;
-    width: 302px;
+    width: 22%;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 .image_carte_activites {
-    width: 302px;
+    width: 100%;
     height: 445px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -501,7 +501,7 @@ footer {
     display: flex;
     flex-direction: row;
     column-gap: 240px;
-    flex-wrap: wrap;
+    max-width: 100%;
     padding-left: 48px;
     margin: 61px 53px 0 48px;
     background-color: #F2F2F2;
@@ -561,6 +561,7 @@ footer a {
 
     .filtres_recherche li {
         column-gap: 20px;
+        flex-wrap: wrap;
     }
 
     .carte_plus_populaire {
@@ -601,11 +602,19 @@ footer a {
     .texte_carte_populaireh6 {
         font-size: 13px;
     }
+    .image_carte_populaire {
+        max-width: 100%;
+        object-fit: cover;
+        border: 5px solid #FFFFFF;
+        border-radius: 20px 0px 0px 20px;
+    }
 
     #section_hebergement {
         display: flex;
         flex-direction: column;
         max-width: 100%;
+       
+        
      
     }
     .hebergement_marseille {
@@ -618,18 +627,17 @@ footer a {
 
     .carte_activites_a_marseille {
         margin-right: 50px;
+        width: 88%;
     }
 
     .carte_activites {
-
-        width: 182px;
         height: 267px;
         background-color: white;
         flex-wrap: nowrap;
     }
 
     .image_carte_activites {
-        width: 182px;
+        width: 100%;
         height: 210px;
         object-fit: cover;
     }
@@ -676,8 +684,23 @@ footer a {
     nav a:hover {
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
-        padding-bottom: 23px;
+        width: 180px;
+        padding-bottom: 28px;
     }
+    .section_hebergement.underline-effect {
+        background: #0065fc;
+      }
+/*
+    .hover bottom
+    {
+        width: 100%;
+        height: 3px;
+        background: #F2F2F2;
+        top: 129px;
+        
+        
+    }
+    */
 
 }
 
@@ -689,6 +712,7 @@ footer a {
         margin-left: 20px;
 
     }
+   
 
     .location_filtre {
         width: 70%;
@@ -745,6 +769,7 @@ footer a {
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
+        
     }
 
     .plus_populaire {
@@ -786,13 +811,12 @@ footer a {
     .carte_hebergement {
         width: 90%;
         height: 199px;
-
     }
 
     .image_hebergement {
 
         width: 100%;
-        height: 124px;
+        height: 65%;
         object-fit: cover;
     }
 
