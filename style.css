@@ -1,3 +1,8 @@
+:root {
+    --blue: #0065FC;
+    --white: #ffffff;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
@@ -45,8 +50,8 @@ header {
 }
 
 .nav:hover {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    color: var(--blue);
+    border-top: 2px solid var(--blue);
     padding-top: 46px;
 }
 
@@ -65,6 +70,19 @@ header {
     font-weight: 400;
     margin-top: 8px;
 
+}
+
+.filters_form{
+    display: flex;
+}
+
+.recherche_desktop{
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 0px 15px 15px 0px;
+    width: 132px;
+    height: 49px;
+    color: white;
 }
 
 .localisation_filtre {
@@ -87,32 +105,22 @@ header {
     align-items: center;
 }
 
-.localisation_box2 {
-    display: flex;
-    background-color: white;
-    border: 1px solid #F2F2F2;
-}
-
-.localisation_box3 {
-    background-color: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    width: 132px;
-    height: 49px;
-}
 
 .loupe_recherche_mobile {
-    visibility: collapse;
+    display: none;
     color: white;
-    background-color: #0065FC;
-    border: none;
+    background-color: var(--blue);
+    width: 50px;
+    border: 1px solid var(--blue);
+    border-radius: 0 15px 15px 0;
 }
 
 .barre_recherche {
-    border: none;
+    border: 1px solid #F2F2F2;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
+    height: 49px;
     text-align: center;
 }
 
@@ -122,7 +130,7 @@ header {
 }
 
 .bouton_recherche {
-    background-color: #0065FC;
+    background-color: var(--blue);
     border: none;
     font-style: normal;
     font-weight: 700;
@@ -170,7 +178,7 @@ header {
 
 .filtres_recherche li i {
     font-size: 22px;
-    color: #0065FC;
+    color: var(--blue);
     padding-right: 10px;
 }
 
@@ -197,7 +205,7 @@ header {
 
 .filtre_information .icone {
     display: flex;
-    color: #0065FC;
+    color: var(--blue);
     border: 1px solid #D9D9D9;
     width: 24px;
     height: 24px;
@@ -318,7 +326,7 @@ h4 {
     flex-direction: row;
     padding: 9px 0px 11px 16px;
     font-size: 12px;
-    color: #0065FC;
+    color: var(--blue);
 
 }
 
@@ -364,7 +372,7 @@ h4 {
 }
 
 .entete_plus_populaire i {
-    color: #0065FC;
+    color: var(--blue);
     width: 18px;
     height: 15.75px;
     padding-right: 42px;
@@ -702,20 +710,12 @@ footer a {
     }
 
     .nav:hover {
-        color: #0065FC;
-        border-bottom: 3px solid #0065FC;
+        color: var(--blue);
+        border-bottom: 3px solid var(--blue);
         padding-bottom: 20px;
 
 
     }
-
-}
-
-
-/*media queries section activité */
-@media screen and (max-width:768px) {
-
-
     #filtre_activites {
         margin-top: 31px;
         margin-left: 20px;
@@ -733,7 +733,7 @@ footer a {
         margin-top: 30px;
     }
 
-    .bouton_recherche {
+    .recherche_desktop {
         display: none;
     }
 
@@ -752,9 +752,9 @@ footer a {
 
     .loupe_recherche_mobile {
 
-        visibility: visible;
+        display: block;
         color: white;
-        background-color: #0065FC;
+        background-color: var(--blue);
         border: none;
     }
 
@@ -874,4 +874,5 @@ footer a {
         margin-top: 80px;
 
     }
+
 }
