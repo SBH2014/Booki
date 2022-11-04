@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
                 <img class="logo" src="image/imagesbooki/logo/Booki.png" alt="logo_booki">
             </figure>
             <nav class="navbar">
-                <a class="nav" href="#section_hebergement"> Hébergements </a></li>
-                <a class="nav" href="#activites_a_marseille"> Activités </a> </li>
+                <a class="nav" href="#section_hebergement"> Hébergements </a>
+                <a class="nav" href="#activites_a_marseille"> Activités </a>
             </nav>
         </header>
 
@@ -39,42 +39,36 @@
                 <div class="localisation_box1">
                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                 </div>
-                <div class="localisation_box2">
+                <form class="filters_form">
                     <label for="zone_de_recherche"></label>
                     <input class="barre_recherche" type="search" name="zone_de_recherche" id="zone_de_recherche"
                         placeholder="Marseille,france">
-                </div>
-                <div class="localisation_box3">
-                    <input class="bouton_recherche" type="submit" value="Recherche">
-                    <button type="submit" class="loupe_recherche_mobile"> <i class="fas fa-search"></i></button>
-                </div>
+                    <button type="submit" class="recherche_desktop">Rechercher</button>
+                    <button type="submit" class="loupe_recherche_mobile"><i class="fas fa-search"></i></button>
+                </form>
             </div>
-            <div class="filtres_recherche">
-
+            <article class="filtres_recherche">
                 <h3> Filtres</h3>
-                <ul>
-                    <li>
-                        <form class="filtre" action="#">
+                <div class="filtre_recherche_bouton">
+                    <div class="filtre">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <button class="bouton_filtres">Économique</button>
+                    </div>
+                    <div class="filtre">
+                        <i class="fa-solid fa-person"></i>
+                        <button class="bouton_filtres">Familial</button>
+                    </div>
+                    <div class="filtre">
+                        <i class="fa-solid fa-heart"></i>
+                        <button class="bouton_filtres">Romantique</button>
+                    </div>
+                    <div class="filtre">
+                        <i class="fa-solid fa-dog"></i>
+                        <button class="bouton_filtres">Animaux autorisés</button>
+                    </div>
+                </div>
 
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <button class="bouton_filtres">Économique</button>
-                        </form>
-                        <form class="filtre" action="#">
-                            <i class="fa-solid fa-person"></i>
-                            <button class="bouton_filtres">Familial</button>
-                        </form>
-                        <form class="filtre" action="#">
-
-                            <i class="fa-solid fa-heart"></i>
-                            <button class="bouton_filtres">Romantique</button>
-                        </form>
-                        <form class="filtre" action="#" method="get">
-                            <i class="fa-solid fa-dog"></i>
-                            <button class="bouton_filtres">Animaux autorisés</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
+            </article>
             <div class="filtre_information">
                 <figure class="icone">
                     <i class="fa-solid fa-info "></i>
@@ -102,6 +96,7 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                     </a>
+
 
                     <a class="carte_hebergement" href="#">
                         <img class="image_hebergement" src="image/imagesbooki/hebergements/4_small/hotel_du_port.jpg"
@@ -281,7 +276,7 @@
         </section>
         <footer>
             <div class="footer_liens">
-                <h1>À propos</h1>
+                <h6>À propos</h6>
                 <a class="footer_liens1" href="#">
                     <p> Fonctionnement du site</p>
                 </a>
@@ -293,7 +288,7 @@
                 </a>
             </div>
             <div class="footer_liens">
-                <h1>Nos hébergements</h1>
+                <h6>Nos hébergements</h6>
                 <a class="footer_liens1" href="#">
                     <p>Charte qualité</p>
                 </a>
@@ -302,7 +297,7 @@
                 </a>
             </div>
             <div class="footer_liens">
-                <h1>Assistance</h1>
+                <h6>Assistance</h6>
                 <a class="footer_liens1" href="#">
                     <p>Centre d’aide</p>
                 </a>
