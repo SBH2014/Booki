@@ -119,7 +119,7 @@ header {
 
 
 .barre_recherche {
-    border: none;
+    border: none; /* todo il y a 2x border */
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -439,7 +439,7 @@ h4 {
 
     display: flex;
     flex-direction: column;
-    row-gap: 18.5px;
+    row-gap: 18.5px; /* todo attention aux nombres flottants, le rendu peut être différent selon les navigateurs */
     max-width: 100%;
     margin-right: 50px;
     max-height: 100%;
@@ -846,7 +846,6 @@ footer a {
         margin: 0;
         height: 100%;
         margin-top: 80px;
-
+        /*margin: 80px 0 0; todo peut remplacer tes 2 margin*/
     }
-
 }
