@@ -162,7 +162,7 @@ header {
 
 }
 
-.filtres_recherche p {
+.filtres_recherche h2 {
 
     margin-top: 46px;
     padding-left: 7px;
@@ -711,7 +711,7 @@ footer a {
 
     }
 
-    .filtres_recherche p {
+    .filtres_recherche h2 {
         margin-top: 30px;
     }
 
