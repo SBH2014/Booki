@@ -11,7 +11,7 @@
 }
 
 #bloc_page {
-    max-width: 1440px;
+    max-width: 1400px;
     max-height: 100%;
     margin: auto;
 }
@@ -59,6 +59,7 @@ header {
 }
 
 
+
 /* section filtre_activites */
 
 #filtre_activites {
@@ -84,6 +85,7 @@ header {
     width: 132px;
     height: 49px;
     color: var(--white);
+    cursor: pointer;
 }
 
 .localisation_filtre {
@@ -419,9 +421,6 @@ h2 {
     object-fit: cover;
     border: 5px solid var(--white);
     border-radius: 20px 0px 0px 20px;
-
-
-
 }
 
 
@@ -435,8 +434,6 @@ h2 {
     max-width: 100%;
     max-height: 100%;
     margin-right: 50px;
-
-
 }
 
 #activites_a_marseille h2 {
@@ -481,9 +478,6 @@ h2 {
     padding: 21px 0 21px 19px;
 }
 
-
-
-
 footer {
     display: flex;
     flex-direction: row;
@@ -492,8 +486,6 @@ footer {
     padding: 45px 0 0 60px;
     margin: 61px 53px 0 48px;
     background-color: var(--gris);
-
-
 }
 
 .footer_liens {
@@ -517,7 +509,6 @@ footer a {
     color: black;
     padding-top: 5px;
 }
-
 
 /*media queries tablette/body */
 @media screen and (max-width:992px) {
@@ -660,8 +651,6 @@ footer a {
     }
 }
 
-
-
 /*media queries pour le mobile */
 
 @media screen and (max-width:768px) {
@@ -772,9 +761,6 @@ footer a {
         width: 24px;
     }
 
-
-
-
     #section_hebergement {
         display: flex;
         flex-direction: column-reverse;
@@ -852,7 +838,6 @@ footer a {
     .image_carte_activites {
         width: 100%;
         height: 134px;
-        object-fit: cover;
     }
 
     footer {
@@ -862,9 +847,6 @@ footer a {
         padding-bottom: 61px;
         height: 100%;
         margin: 80px 0 0 0;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 80px;
         padding-left: 30px;
     }
 
